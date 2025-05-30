@@ -17,6 +17,7 @@
 .preview-card {
      background-color: white;
      border: 1px solid black;
+     border-radius: 15px;
      display: flex;
      flex-direction: column;
      /* align-items: flex-start; */
@@ -29,12 +30,12 @@
 }
 
 .image {
-     outline: 3px solid red;
+     /* outline: 3px solid red; */
      width: 100%;
 }
 
 .subject-date-container {
-     outline: 3px solid red;
+     /* outline: 3px solid red; */
      display: flex;
      flex-direction: column;
      gap: 10px;
@@ -44,10 +45,18 @@
      display: inline-block;
      /* In order to make the button take its original shape, we have to set align-self to flex-start. This is because the parent div (subject-date-container) is overriding the child and stretching the button the full width */
      align-self: flex-start;
+     border: none;
+     background-color:hsl(47, 88%, 63%);
+     border-radius: 5px;
+     padding: 5px 10px;
+}
+
+.date {
+     color: #111111;
 }
 
 .title-description-container {
-     outline: 3px solid red;
+     /* outline: 3px solid red; */
      display: flex;
      flex-direction: column;
      gap: 10px;
@@ -58,14 +67,14 @@
 }
 
 .description {
-
+     color: #6b6b6b;
 }
 
 .user-container {
-     outline: 3px solid red;
+     /* outline: 3px solid red; */
      display: flex;
      gap: 5px;
-     height: 25px;
+     /* height: 25px; */
      align-items: center;
 }
 
@@ -73,6 +82,8 @@
      width: 35px;
      height: 35px;
      border-radius: 1000px;
+     /* To remove the gap on the bottom of the image, set the display to block */
+     display: block;
 }
 
 .user-name {
